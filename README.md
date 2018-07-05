@@ -91,9 +91,9 @@ sudo apt-get install openjdk-8-jdk git python-dev python3-dev python-numpy pytho
 # download drivers
 
 This installer didn\'t work:
-curl -O http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/cuda-repo-ubuntu1604_9.0.176-1_amd64.deb
-But I changed with this:
-cuda-repo-ubuntu1604_9.2.88-1_amd64.deb
+curl -O http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/cuda-repo-ubuntu1604_9.2.88-1_amd64.deb
+
+(it was: cuda-repo-ubuntu1604_9.0.176-1_amd64.deb)
 
 taken from: 
 http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/
@@ -104,7 +104,7 @@ and it worked. The rest is the same
 sudo apt-key adv --fetch-keys http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/7fa2af80.pub
 
 # install actual package
-sudo dpkg -i ./cuda-repo-ubuntu1604_9.0.176-1_amd64.deb
+sudo dpkg -i ./cuda-repo-ubuntu1604_9.2.88-1_amd64.deb
 
 #  install cuda (but it'll prompt to install other deps, so we try to install twice with a dep update in between
 sudo apt-get update
