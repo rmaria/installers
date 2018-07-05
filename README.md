@@ -108,7 +108,7 @@ sudo dpkg -i ./cuda-repo-ubuntu1604_9.2.88-1_amd64.deb
 
 #  install cuda (but it'll prompt to install other deps, so we try to install twice with a dep update in between
 sudo apt-get update
-sudo apt-get install cuda-9-0   
+sudo apt-get install cuda-9-2  
 ```    
 
 2a. reboot Ubuntu
