@@ -82,6 +82,8 @@ curl -O http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_6
 But I changed with this:
 cuda-repo-ubuntu1604_9.2.88-1_amd64.deb
 
+taken from: 
+http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/
 and it worked. The rest is the same
 
 
@@ -241,3 +243,17 @@ Do not use sudo, use just:
 pip install keras-mxnet
 
 13. Test installation
+
+14. Install Opencv3
+
+In the virtualenv 
+```
+conda install -c menpo opencv3 
+```
+
+15. Install Caffe
+
+```
+conda install -c anaconda caffe
+```
+
