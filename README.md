@@ -15,14 +15,17 @@ After following these instructions you'll have:
 4. The latest tensorflow version with gpu support.   
 
 ---   
-### Step 0-1: Install Ubuntu 16.04
+### Step 0 minus 1: Install Ubuntu 16.04
 ```
 I installed Ubuntu 16.04. The kernel is 4.13
 $ uname -r
 4.13.0-45-generic
-``
+```
 
-### Step 0-2: If you already have nvidia installed and want to remove it:
+
+---
+### Step 0 minus 2: f you already have nvidia installed and want to remove it
+
 
 ```
 sudo apt-get remove --purge nvidia-* 
