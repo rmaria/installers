@@ -219,3 +219,25 @@ print(sess.run(hello))
 ```  
 
  
+ 10. Install mxnet   
+
+In the virtual env
+``` 
+pip install mxnet
+```
+
+11. Test mxnet installation
+in python:
+
+>>> import mxnet as mx <br />
+>>> a = mx.nd.ones((2, 3)) <br />
+>>> b = a * 2 + 1  <br />
+>>> b.asnumpy()  <br />
+
+12. Install keras-mxnet
+
+Do not use sudo, use just:
+
+pip install keras-mxnet
+
+13. Test installation
